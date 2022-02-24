@@ -1,7 +1,370 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-@media screen and (max-width: 600px) {
+.nav {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 1px 3px #b7b7b7);
+}
+
+.nav> {
+    display: flex;
+}
+
+.nav>.nav-title>h1 {
+    display: flex;
+    font-size: 32px;
+    color: black;
+    font-family: 'Shrikhand', cursive;
+    padding: 10px 10px 10px 10px;
+}
+
+.icon-localisation {
+    margin-right: 15px;
+}
+
+.localisation {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #EAEAEA;
+    align-items: center;
+    justify-content: center;
+}
+
+.localisation> {
+    display: flex;
+}
+
+.localisation>.localisation-title {
+    display: flex;
+    font-size: 18px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-decouverte {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F6F6F6;
+    height: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.section-decouverte h2 {
+    margin-top: 0px;
+    padding-top: 60px;
+}
+
+.section-decouverte p {
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.decouverte-bouton button {
+    border-radius: 40px;
+    padding: 18px 25px;
+    color: white;
+    border-style: none;
+    background: linear-gradient(0.48turn, #E972DA, #A15ADC);
+    box-shadow: 0px 5px 10px rgb(168, 168, 168);
+}
+
+.decouverte-bouton button:hover {
+    background: linear-gradient(0.48turn, #ee78de, #b370eb);
+    box-shadow: 0px 6px 10px rgb(150, 150, 150);
+}
+
+.section-fonctionnement {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.fonctionnement-titre {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.fonctionnement-texte {
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+.fonctionnement-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.fonctionnement-icon i {
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative;
+    top: -5px;
+    color: #7E7E7E;
+}
+
+.fonctionnement-icon i:hover {
+    color: #9256DC;
+}
+
+.button-1 {
+    background-color: #A15ADC;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border-style: none;
+    color: white;
+    position: relative;
+    left: -20px;
+    bottom: -20px;
+}
+
+.fonctionnement-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fonctionnement-button-1 {
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #F6F6F6;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    width: 400px;
+}
+
+.fonctionnement-button-1:hover {
+    background-color: #F6EDFF;
+}
+
+.button-2 {
+    background-color: #A15ADC;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border-style: none;
+    color: white;
+    position: relative;
+    left: -20px;
+    bottom: -20px;
+}
+
+.fonctionnement-button-2 {
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #F6F6F6;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    width: 400px;
+}
+
+.fonctionnement-button-2:hover {
+    background-color: #F6EDFF;
+}
+
+.button-3 {
+    background-color: #A15ADC;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border-style: none;
+    color: white;
+    position: relative;
+    left: -20px;
+    bottom: -20px;
+}
+
+.fonctionnement-button-3 {
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #F6F6F6;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    width: 400px;
+}
+
+.fonctionnement-button-3:hover {
+    background-color: #F6EDFF;
+}
+
+.section-restaurants {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #F6F6F6;
+    padding-bottom: 50px;
+}
+
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.restaurants-titre {
+    margin-top: 40px;
+    padding-top: 30px;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.restaurants-card {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.card-header-1 {
+    background-image: url(../images/restaurants/img-1.jpg);
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-header-2 {
+    background-image: url(../images/restaurants/img-2.jpg);
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-header-3 {
+    background-image: url(../images/restaurants/img-3.jpg);
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-header-4 {
+    background-image: url(../images/restaurants/img-4.jpg);
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.card-body {
+    display: flex;
+    height: 70px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.card-body p {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+.card-body h4 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.icon-favori .fas {
+    color: #636363;
+    font-size: 25px;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+/*    .icon-favori .fas:hover {
+    background: linear-gradient(0.48turn, #E972DA, #A15ADC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+*/
+
+.nouveau {
+    padding: 5px 20px;
+    color: #008766;
+    background-color: #99E2D0;
+    border-style: none;
+    border-radius: 2px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.div-footer-background {
+    background-color: #353535;
+    padding: 20px;
+}
+
+.footer {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-title h4 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.footer-text p {
+    color: white;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon-ustensils {
+    display: flex;
+    height: 35px;
+}
+
+.icon-hands-helping {
+    display: flex;
+    height: 35px;
+}
+
+.fa-utensils {
+    color: white;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.fa-hands-helping {
+    color: white;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 900px) {
     .nav {
         display: flex;
         height: 70px;
@@ -88,6 +451,8 @@
     .fonctionnement-titre {
         margin-bottom: 30px;
         margin-top: 40px;
+        max-width: 100%;
+        min-width: 100%;
     }
 
     .fonctionnement-texte {
@@ -124,11 +489,17 @@
         bottom: -20px;
     }
 
+    .fonctionnement-button {
+        display: block;
+        margin-right: 30px;
+    }
+
     .fonctionnement-button-1 {
         position: relative;
         border-radius: 20px;
         margin-bottom: 20px;
         height: 70px;
+        width: 100%;
         background-color: #F6F6F6;
         box-shadow: 0px 5px 10px rgb(219, 219, 219);
     }
@@ -151,6 +522,7 @@
     .fonctionnement-button-2 {
         position: relative;
         border-radius: 20px;
+        width: 100%;
         margin-bottom: 20px;
         height: 70px;
         background-color: #F6F6F6;
@@ -176,6 +548,7 @@
         position: relative;
         border-radius: 20px;
         margin-bottom: 20px;
+        width: 100%;
         height: 70px;
         background-color: #F6F6F6;
         box-shadow: 0px 5px 10px rgb(219, 219, 219);
@@ -190,12 +563,18 @@
         padding-left: 30px;
         padding-right: 30px;
         background-color: #F6F6F6;
-        height: 1400px;
+        height: 1320px;
+    }
+
+    .card-flex {
+        display: block;
     }
 
     .restaurants-titre {
         margin-top: 40px;
         padding-top: 30px;
+        max-width: 100%;
+        min-width: 100%;
     }
 
     .restaurants-card {
@@ -205,6 +584,8 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
         margin-bottom: 15px;
         color: black;
     }
@@ -289,6 +670,11 @@
     .div-footer-background {
         background-color: #353535;
         padding: 20px;
+    }
+
+    .footer {
+        max-width: 100%;
+        min-width: 100%;
     }
 
     .footer-title h4 {
