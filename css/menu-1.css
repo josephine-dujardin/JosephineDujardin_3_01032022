@@ -3,6 +3,100 @@
 
 body {
     background-color: #F6F6F6;
+    animation: pulse 5s;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}
+
+.tamsayfaloadingcss {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+#tmsyfloadspin {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.tmsyfloaddoublboun1 {
+    background-color: #E972DA
+}
+
+.tmsyfloaddoublboun2 {
+    background-color: #A15ADC
+}
+
+.tmsyfloaddoublboun3 {
+    background-color: #99E1D1
+}
+
+.tmsyfloaddoublboun1, .tmsyfloaddoublboun2, .tmsyfloaddoublboun3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2s ease-in-out;
+    animation: sk-bounce 2s ease-in-out;
+}
+
+.tmsyfloaddoublboun2 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s
+}
+
+.tmsyfloaddoublboun3 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0)
+    }
+
+    50% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0);
+        opacity: .6;
+        -webkit-transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: .6;
+        -webkit-transform: scale(1)
+    }
+
 }
 
 .nav {
@@ -35,6 +129,11 @@ i.fas.fa-arrow-left {
     font-size: 23px;
     margin-left: 20px;
     position: absolute;
+    bottom: 24px;
+}
+
+.arrow-left {
+    color: black;
 }
 
 .img-restaurant {
@@ -146,6 +245,63 @@ hr.line {
 }
 
 .menu-barre-1 {
+
+    animation: fadein 2s;
+    animation: slideup 2s;
+}
+
+@keyframes slideup {
+    from {
+        transform: translatey(20px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+
+}
+
+.menu-barre-2 {
+
+    animation: fadein 3s;
+    animation: slideup 2.5s;
+}
+
+@keyframes slideup {
+    from {
+        transform: translatey(20px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+
+}
+
+.menu-barre-3 {
+
+    animation: fadein 4s;
+    animation: slideup 3s;
+}
+
+@keyframes slideup {
+    from {
+        transform: translatey(20px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+
+}
+
+.menu-barre-1 {
     position: relative;
     padding-top: 1px;
     padding-left: 20px;
@@ -156,6 +312,124 @@ hr.line {
     width: 400px;
     background-color: white;
     box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    border-right: 0 solid #99E1D1;
+    transition: border-right 350ms ease-in-out, width 350ms ease-in-out;
+}
+
+.menu-barre-1:hover .check-circle {
+    color: white;
+    font-size: 25px;
+    transition: transform 750ms;
+}
+
+.menu-barre-1:hover .check-circle {
+    animation: fadein 1s;
+    transform: rotate(360deg);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.check-circle {
+    position: absolute;
+    right: -42px;
+    top: 22px;
+    font-size: 0px;
+    color: transparent;
+}
+
+.menu-barre-1:hover {
+    border-right: 60px solid #99E1D1;
+    width: 340px;
+}
+
+.menu-barre-2 {
+    position: relative;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 70px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    border-right: 0 solid #99E1D1;
+    transition: border-right 350ms ease-in-out, width 350ms ease-in-out;
+}
+
+.menu-barre-2:hover .check-circle {
+    color: white;
+    font-size: 25px;
+    transition: transform 750ms;
+}
+
+.menu-barre-2:hover .check-circle {
+    animation: fadein 1s;
+    transform: rotate(360deg);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-barre-2:hover {
+    border-right: 60px solid #99E1D1;
+    width: 340px;
+}
+
+.menu-barre-3 {
+    position: relative;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 70px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    border-right: 0 solid #99E1D1;
+    transition: border-right 350ms ease-in-out, width 350ms ease-in-out;
+}
+
+.menu-barre-3:hover .check-circle {
+    color: white;
+    font-size: 25px;
+    transition: transform 750ms;
+}
+
+.menu-barre-3:hover .check-circle {
+    animation: fadein 1s;
+    transform: rotate(360deg);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-barre-3:hover {
+    border-right: 60px solid #99E1D1;
+    width: 340px;
 }
 
 .commande-bouton button {
@@ -183,7 +457,7 @@ hr.line {
 
 .div-footer-background {
     background-color: #353535;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
 }
 
 .footer-title h4 {
@@ -218,6 +492,15 @@ hr.line {
     color: white;
     margin-top: 15px;
     margin-right: 15px;
+}
+
+.contact a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-contact, a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -377,6 +660,26 @@ hr.line {
         width: auto;
         background-color: white;
         box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    }
+
+    .menu-barre-1:hover {
+        width: auto;
+    }
+
+    .menu-barre-2 {
+        width: auto;
+    }
+
+    .menu-barre-2:hover {
+        width: auto;
+    }
+
+    .menu-barre-3 {
+        width: auto;
+    }
+
+    .menu-barre-3:hover {
+        width: auto;
     }
 
     .commande-bouton button {
