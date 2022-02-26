@@ -1,6 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+body {
+    animation: pulse 5s;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}
+
+.tamsayfaloadingcss {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+#tmsyfloadspin {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.tmsyfloaddoublboun1 {
+    background-color: #E972DA
+}
+
+.tmsyfloaddoublboun2 {
+    background-color: #A15ADC
+}
+
+.tmsyfloaddoublboun3 {
+    background-color: #99E1D1
+}
+
+.tmsyfloaddoublboun1, .tmsyfloaddoublboun2, .tmsyfloaddoublboun3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2s ease-in-out;
+    animation: sk-bounce 2s ease-in-out;
+}
+
+.tmsyfloaddoublboun2 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s
+}
+
+.tmsyfloaddoublboun3 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0)
+    }
+
+    50% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0);
+        opacity: .6;
+        -webkit-transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: .6;
+        -webkit-transform: scale(1)
+    }
+
+}
+
 .nav {
     display: flex;
     height: 70px;
@@ -69,16 +164,19 @@
     font-size: 18px;
 }
 
-.decouverte-bouton button {
+.decouverte-bouton {
     border-radius: 40px;
     padding: 18px 25px;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
     border-style: none;
     background: linear-gradient(0.48turn, #E972DA, #A15ADC);
     box-shadow: 0px 5px 10px rgb(168, 168, 168);
 }
 
-.decouverte-bouton button:hover {
+.decouverte-bouton:hover {
     background: linear-gradient(0.48turn, #ee78de, #b370eb);
     box-shadow: 0px 6px 10px rgb(150, 150, 150);
 }
@@ -215,6 +313,10 @@
     padding-bottom: 50px;
 }
 
+.a-restaurants-card {
+    text-decoration: none;
+}
+
 .card-flex {
     display: flex;
     flex-wrap: wrap;
@@ -282,8 +384,7 @@
     font-size: 16px;
     font-weight: lighter;
     margin-left: 20px;
-    margin-top: 4px;
-    margin-bottom: 5px;
+    margin-top: -3px;
 }
 
 .card-body h4 {
@@ -321,7 +422,7 @@
 
 .div-footer-background {
     background-color: #353535;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
 }
 
 .footer {
@@ -354,14 +455,53 @@
 
 .fa-utensils {
     color: white;
-    margin-top: 15px;
+    margin-top: 8px;
     margin-right: 15px;
 }
 
 .fa-hands-helping {
     color: white;
-    margin-top: 15px;
-    margin-right: 15px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.contact a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-contact, a {
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.mentions-legales a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-mentions-legales, a {
+    text-decoration: none;
+}
+
+.devenir-partenaire a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-devenir-partenaire, a {
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.proposer-un-restaurant a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-proposer-un-restaurant, a {
+    text-decoration: none;
+    line-height: 2em;
 }
 
 @media screen and (max-width: 900px) {
@@ -433,7 +573,7 @@
         font-size: 18px;
     }
 
-    .decouverte-bouton button {
+    .decouverte-bouton {
         border-radius: 40px;
         padding: 18px 25px;
         color: white;
@@ -630,8 +770,7 @@
         font-size: 16px;
         font-weight: lighter;
         margin-left: 20px;
-        margin-top: 4px;
-        margin-bottom: 5px;
+        margin-top: -3px;
     }
 
     .card-body h4 {
