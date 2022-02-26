@@ -6,8 +6,6 @@ body {
     animation: pulse 5s;
 }
 
-
-
 @keyframes pulse {
     0% {
         opacity: 0%;
@@ -244,6 +242,10 @@ hr.line {
     line-height: 10px;
 }
 
+.menu-barre p {
+    color: black;
+}
+
 .menu-barre-1 {
 
     animation: fadein 2s;
@@ -308,6 +310,7 @@ hr.line {
     padding-right: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
+    line-height: 1;
     height: 70px;
     width: 400px;
     background-color: white;
@@ -357,6 +360,7 @@ hr.line {
     padding-right: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
+    line-height: 1;
     height: 70px;
     width: 400px;
     background-color: white;
@@ -398,6 +402,7 @@ hr.line {
     padding-right: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
+    line-height: 1;
     height: 70px;
     width: 400px;
     background-color: white;
@@ -432,11 +437,17 @@ hr.line {
     width: 340px;
 }
 
-.commande-bouton button {
+.commande-bouton {
     border-radius: 40px;
     padding: 16px 50px;
     font-family: 'Roboto', sans-serif;
     color: white;
+    width: 100px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.5;
     margin-top: 30px;
     margin-bottom: 60px;
     font-size: 15px;
@@ -445,14 +456,9 @@ hr.line {
     box-shadow: 0px 5px 10px rgb(168, 168, 168);
 }
 
-.commande-bouton button:hover {
+.commande-bouton:hover {
     background: linear-gradient(0.48turn, #ee78de, #b370eb);
     box-shadow: 0px 6px 10px rgb(150, 150, 150);
-}
-
-.commande-bouton {
-    display: flex;
-    justify-content: center;
 }
 
 .div-footer-background {
@@ -484,14 +490,14 @@ hr.line {
 
 .fa-utensils {
     color: white;
-    margin-top: 15px;
+    margin-top: 8px;
     margin-right: 15px;
 }
 
 .fa-hands-helping {
     color: white;
-    margin-top: 15px;
-    margin-right: 15px;
+    margin-top: 8px;
+    margin-right: 8px;
 }
 
 .contact a {
@@ -501,6 +507,36 @@ hr.line {
 
 .a-contact, a {
     text-decoration: none;
+    line-height: 2em;
+}
+
+.mentions-legales a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-mentions-legales, a {
+    text-decoration: none;
+}
+
+.devenir-partenaire a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-devenir-partenaire, a {
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.proposer-un-restaurant a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-proposer-un-restaurant, a {
+    text-decoration: none;
+    line-height: 2em;
 }
 
 @media screen and (max-width: 600px) {
