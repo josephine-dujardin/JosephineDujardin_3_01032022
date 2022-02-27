@@ -170,6 +170,14 @@ i.fas.fa-arrow-left {
     font-weight: 400;
 }
 
+.icon-heart .fas:hover {
+    background: linear-gradient(0.48turn, #E972DA, #A15ADC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
 .section-menu-flex {
     display: flex;
     justify-content: space-around;

@@ -401,13 +401,13 @@ body {
     font-weight: 400;
 }
 
-/*    .icon-favori .fas:hover {
+.icon-favori .fas:hover {
     background: linear-gradient(0.48turn, #E972DA, #A15ADC);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
 }
-*/
 
 .nouveau {
     padding: 5px 20px;
