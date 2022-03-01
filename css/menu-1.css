@@ -106,10 +106,6 @@ body {
     align-items: center;
 }
 
-.nav> {
-    display: flex;
-}
-
 .nav>.nav-title>h1 {
     display: flex;
     font-size: 32px;
@@ -560,10 +556,6 @@ hr.line {
         background-color: #FFFFFF;
         position: relative;
         align-items: center;
-    }
-
-    .nav> {
-        display: flex;
     }
 
     .nav>.nav-title>h1 {
