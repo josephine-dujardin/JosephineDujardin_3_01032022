@@ -725,21 +725,21 @@ body {
     }
 
     .card-header-2 {
-        background-image: url(../images/restaurants/img-2.jpg);
-        height: 200px;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .card-header-3 {
         background-image: url(../images/restaurants/img-3.jpg);
         height: 200px;
         background-position: center;
         background-size: cover;
     }
 
-    .card-header-4 {
+    .card-header-3 {
         background-image: url(../images/restaurants/img-4.jpg);
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card-header-4 {
+        background-image: url(../images/restaurants/img-2.jpg);
         height: 200px;
         background-position: center;
         background-size: cover;
